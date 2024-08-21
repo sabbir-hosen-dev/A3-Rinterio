@@ -1,38 +1,167 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light" >
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rinterio</title>
-  <!-- font  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rinterio</title>
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- font awsome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- daisy ui and tailwind cdn  -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    
 
-  <!-- tailwind confing script  -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
+    <!-- tailwind confing script  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ABEF5F",
+              litePrimary: "#ABEF5F80",
+              heading: "#212121",
+              text: "#494949",
+              gray: "#1E1E1E",
+              dark: "#1C1C1C",
+            },
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
           },
-          fontFamily: {
-            manrope: ['Manrope', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
-</head>
-<body>
-  
-  <h1 class="font-manrope ">This is heading</h1>
-</body>
+        },
+      };
+    </script>
+  </head>
+  <body class="font-manrope">
+    <!-- header section  -->
+    <header class="bg-gradient-to-r from-gray-200 to-gray-50">
+      <!-- <div class="w-full h-screen  bg-red-700"></div> -->
+
+      <!-- navber  -->
+      <nav
+        class="container px-5 lg:px-20 mx-auto flex justify-between items-center py-2"
+      >
+        <div class="logo flex items-center gap-2">
+          <i
+            class="fa-solid fa-arrow-right-long -rotate-45 bg-primary p-2 rounded-full"
+          ></i>
+          <h2 class="text-heading font-extrabold text-4xl">Rinterio</h2>
+        </div>
+        <ul class="hidden xl:flex gap-5 items-center">
+          <li
+            class="hover:font-bold text-heading font-bold cursor-pointer duration-300 transition-all hover:text-heading"
+          >
+            <a href="home">Home</a>
+          </li>
+          <li
+            class="hover:font-bold duration-300 transition-all hover:text-heading"
+          >
+            <a href="servies">Servies</a>
+          </li>
+          <li
+            class="hover:font-bold duration-300 transition-all hover:text-heading"
+          >
+            <a href="portfolio">Portfolio</a>
+          </li>
+          <li
+            class="hover:font-bold duration-300 transition-all hover:text-heading"
+          >
+            <a href="blog">Blog </a>
+          </li>
+          <li
+            class="hover:font-bold duration-300 transition-all hover:text-heading"
+          >
+            <a href="contact">Contact Us</a>
+          </li>
+        </ul>
+
+        <div class="button flex gap-3 justify-between items-center">
+          <i
+            class="fa-solid fa-magnifying-glass bg-green-50 hidden md:inline-block p-2 rounded-full cursor-pointer"
+          ></i>
+          <i
+            class="fa-solid fa-cart-plus bg-green-50 p-2 rounded-full cursor-pointer hidden md:inline-block"
+          ></i>
+          <button
+            class="btn hidden md:inline-block rounded-3xl bg-primary font-extrabold text-heading"
+          >
+            Book Consulit
+          </button>
+          <div class="dropdown ">
+            <div tabindex="0" role="button" class=" cursor-pointer px-3 py-1 text-2xl rounded-full bg-green-50 hover:bg-primary duration-300 ease-in lg:hidden">
+              <i
+              class="fa-solid fa-bars "
+            ></i>
+
+            <ul
+            tabindex="0"
+            class="menu menu-lg dropdown-content bg-base-100 -left-52 rounded-box z-[1] mt-4 w-52 p-2 shadow">
+
+
+
+            <li
+            class="hover:font-bold text-heading font-bold cursor-pointer duration-300 transition-all hover:text-heading"
+          >
+            <a href="home">Home</a>
+          </li>
+          <li
+            class="hover:font-bold duration-300 transition-all hover:text-heading"
+          >
+            <a href="servies">Servies</a>
+          </li>
+          <li
+            class="hover:font-bold duration-300 transition-all hover:text-heading"
+          >
+            <a href="portfolio">Portfolio</a>
+          </li>
+          <li
+            class="hover:font-bold duration-300 transition-all hover:text-heading"
+          >
+            <a href="blog">Blog </a>
+          </li>
+          <li
+            class="hover:font-bold duration-300 transition-all hover:text-heading"
+          >
+            <a href="contact">Contact Us</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+      <!-- hero sectio  -->
+
+      <div class="container px-5 lg:px-20 mx-auto py-10">
+        <div class="banar-img flex justify-center mb-10">
+          <img src="assets/banner.png" alt="">
+        </div>
+        <h1 class="text-3xl font-[900] text-center md:text-5xl lg:text-6xl">A barn house of this design has a striking appearance</h1>
+        <p class="text-center w-4/5 m-auto my-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+
+        <div class="btn-wrap flex justify-center ">
+          <button class="btn  bg-litePrimary rounded-full hover:bg-primary ease  duration-150">View Details  <i
+            class="fa-solid fa-arrow-right-long -rotate-45 bg-primary p-2 rounded-full"
+          ></i> </button>
+        </div>
+      </div>
+    </header>
+    
+  </body>
 </html>
