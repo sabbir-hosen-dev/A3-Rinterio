@@ -49,6 +49,20 @@
         },
       };
     </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .arow-btn{
+          @apply -rotate-45 bg-primary p-2 rounded-full;
+        }
+        .sub-heading{
+          @apply font-bold text-2xl  ;
+        }
+        .link{
+          @apply font-bold text-xl mr-1  no-underline ;
+        }
+        
+      }
+    </style>
   </head>
   <body class="font-manrope">
     <!-- header section  -->
@@ -207,9 +221,191 @@
                   </div>
                 </div>
               </section> 
+
+        <!-- count section  -->
+         <section class="container mx-auto  px-5 lg:px-20  pb-10">
+
+        <div class="counts justify-between grid p-8  gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-white rounded-xl">
+          <div class="count text-center">
+            <img class="m-auto mb-2" src="assets/message.png" alt="">
+            <h2 class="font-bold text-3xl mb-1">235+</h2>
+            <p>Happy Client Review</p>
+          </div>
+          <div class="count text-center">
+            <img class="m-auto mb-2" src="assets/work.png" alt="">
+            <h2 class="font-bold text-3xl mb-1">50+</h2>
+            <p>Work Departments</p>
+          </div>
+          <div class="count text-center">
+            <img class="m-auto mb-2" src="assets/clint.png" alt="">
+            <h2 class="font-bold text-3xl mb-1">35k+</h2>
+            <p>Our Happy Client</p>
+          </div>
+          <div class="count text-center">
+            <img class="m-auto mb-2" src="assets/member.png" alt="">
+            <h2 class="font-bold text-3xl mb-1">307+</h2>
+            <p>Staff Members</p>
+          </div>
+        </div>
+
+
+         </section>
+
+         <!-- workers section  -->
+
+         <section class="container mx-auto  px-5 lg:px-20  py-10">  
+            
+
+            <div class="mini flex justify-center">
+              <div class="bg-white rounded-full inline-block font-bold p-1 px-3">
+                <i
+                class="fa-solid fa-arrow-right-long "
+              ></i> About Us
+               </div>
+            </div>
+
+            <h2 class="text-center font-extrabold text-4xl my-5 ">Our Latest Portfolio</h2>
+            <p class="text-center max-w-[650px] m-auto mb-7">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+            <div class="works grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-3            ">
+
+              <div class="card rounded-xl p-3 bg-[#E7C1D3]">
+                <div class=""><img src="assets/concept.png" alt=""></div>
+                <h4 class="font-bold mb-1 text-lg">Concept</h4>
+                <p>The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+
+              <div class="card rounded-xl p-3 bg-[#EFDA6E]">
+                <div class=""><img src="assets/flow-chart.png" alt=""></div>
+                <h4 class="font-bold mb-1 text-lg">Design Process</h4>
+                <p>The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+
+              <div class="card rounded-xl p-3 bg-[#A4DAC3]">
+                <div class=""><img src="assets/vision.png" alt=""></div>
+                <h4 class="font-bold mb-1 text-lg">Supervision</h4>
+                <p>The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+
+              <div class="card rounded-xl p-3 bg-[#77AAEA]">
+                <div class=""><img src="assets/budget-planning.png" alt=""></div>
+                <h4 class="font-bold mb-1 text-lg">Budget Planning</h4>
+                <p>The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+            </div>
+         </section>
       </div>
+      
+      <!-- <section class="container mx-auto  px-5 lg:px-20  py-10">  
+            
+
+        <div class="mini flex justify-center">
+          <div class="bg-litePrimary rounded-full inline-block font-bold p-1 px-3">
+            <i
+            class="fa-solid fa-arrow-right-long "
+          ></i> Our Latest Portfolio
+           </div>
+        </div>
+
+        <h2 class="text-center font-extrabold text-4xl my-5 ">Our Latest Portfolio</h2>
+        <p class="text-center max-w-[650px] m-auto mb-7">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+        <div class="works grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-3            ">
+
+
+
+     </section> -->
+
+
+     <!-- article and news section  -->
+
+     <section class="bg-[#F4F4F4]">  
+          <div class="container mx-auto  px-5 lg:px-20  py-10">
+            <div class="mini flex justify-center">
+              <div class="bg-litePrimary rounded-full inline-block font-bold p-1 px-3">
+                <i
+                class="fa-solid fa-arrow-right-long "
+              ></i> Rinterio News
+               </div>
+            </div>
+      
+            <h2 class="text-center font-extrabold text-4xl my-5 ">Read Our Articles and News</h2>
+            <p class="text-center max-w-[650px] m-auto mb-7">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+      
+            <div class="works grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-3">
+      
+              
+            <div class="card bg-white rounded-xl p-3 flex flex-col gap-2">
+              <div class=""><img class="w-full" src="assets/article1.png" alt=""></div>
+              <div class="top flex gap-2">
+                <img src="assets/calendar-03.png" alt="">
+                <p class="font-thin">July 14, 2024</p>
+
+                <img src="assets/user-circle.png" alt="">
+                <p class="font-thin">By Admin</p>
+              </div>
+              <h3 class="sub-heading">How to choose the furniture right  of your home.</h3>
+              <p>The barn house captivates with its blend of rustic charm and modern. </p>
+              <a href="#" class="link">Read More           <i class="fa-solid fa-arrow-right-long  arow-btn"
+              ></i></a>
+            </div>
+      
+
+            <div class="card bg-white rounded-xl p-3 flex flex-col gap-2">
+              <div class=""><img class="w-full" src="assets/article2.png" alt=""></div>
+              <div class="top flex gap-2">
+                <img src="assets/calendar-03.png" alt="">
+                <p class="font-thin">July 14, 2024</p>
+
+                <img src="assets/user-circle.png" alt="">
+                <p class="font-thin">By Admin</p>
+              </div>
+              <h3 class="sub-heading">How to choose the furniture right  of your home.</h3>
+              <p>The barn house captivates with its blend of rustic charm and modern. </p>
+              <a href="#" class="link">Read More           <i class="fa-solid fa-arrow-right-long  arow-btn"
+              ></i></a>
+            </div>
+      
+
+            <div class="card bg-white rounded-xl p-3 flex flex-col gap-2">
+              <div class=""><img class="w-full" src="assets/article3.png" alt=""></div>
+              <div class="top flex gap-2">
+                <img src="assets/calendar-03.png" alt="">
+                <p class="font-thin">July 14, 2024</p>
+
+                <img src="assets/user-circle.png" alt="">
+                <p class="font-thin">By Admin</p>
+              </div>
+              <h3 class="sub-heading">How to choose the furniture right  of your home.</h3>
+              <p>The barn house captivates with its blend of rustic charm and modern. </p>
+              <a href="#" class="link">Read More           <i class="fa-solid fa-arrow-right-long  arow-btn"
+              ></i></a>
+            </div>
+      
+
+            <div class="card bg-white rounded-xl p-3 flex flex-col gap-2">
+              <div class=""><img class="w-full" src="assets/article1.png" alt=""></div>
+              <div class="top flex gap-2">
+                <img src="assets/calendar-04.png" alt="">
+                <p class="font-thin">July 14, 2024</p>
+
+                <img src="assets/user-circle.png" alt="">
+                <p class="font-thin">By Admin</p>
+              </div>
+              <h3 class="sub-heading">How to choose the furniture right  of your home.</h3>
+              <p>The barn house captivates with its blend of rustic charm and modern. </p>
+              <a href="#" class="link">Read More           <i class="fa-solid fa-arrow-right-long  arow-btn"
+              ></i></a>
+            </div>
 
       
+
+      
+
+          </div>
+   </section>
+  
+
     </main>
 
   </body>
