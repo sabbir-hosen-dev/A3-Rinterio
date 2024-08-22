@@ -55,12 +55,21 @@
           @apply -rotate-45 bg-primary p-2 rounded-full;
         }
         .sub-heading{
-          @apply font-bold text-2xl  ;
+          @apply font-bold text-[22px]  ;
         }
-        .link{
-          @apply font-bold text-xl mr-1  no-underline ;
+        .link{ 
+          @apply font-bold text-[16px] mr-1  no-underline ;
         }
-        
+      }
+    </style>
+
+    <style>
+      .connect-bg{
+        background:url(assets/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center
+        center;
       }
     </style>
   </head>
@@ -83,22 +92,22 @@
           <li
             class="hover:font-bold text-heading font-bold cursor-pointer duration-300 transition-all hover:text-heading"
           >
-            <a href="home">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li
             class="hover:font-bold duration-300 transition-all hover:text-heading"
           >
-            <a href="servies">Servies</a>
+            <a href="#servies">Servies</a>
           </li>
           <li
             class="hover:font-bold duration-300 transition-all hover:text-heading"
           >
-            <a href="portfolio">Portfolio</a>
+            <a href="#portfolio">Portfolio</a>
           </li>
           <li
             class="hover:font-bold duration-300 transition-all hover:text-heading"
           >
-            <a href="blog">Blog </a>
+            <a href="#blog">Blog </a>
           </li>
           <li
             class="hover:font-bold duration-300 transition-all hover:text-heading"
@@ -134,12 +143,12 @@
             <li
             class="hover:font-bold text-heading font-bold cursor-pointer duration-300 transition-all hover:text-heading"
           >
-            <a href="home">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li
             class="hover:font-bold duration-300 transition-all hover:text-heading"
           >
-            <a href="servies">Servies</a>
+            <a href="#servies">Servies</a>
           </li>
           <li
             class="hover:font-bold duration-300 transition-all hover:text-heading"
@@ -149,12 +158,12 @@
           <li
             class="hover:font-bold duration-300 transition-all hover:text-heading"
           >
-            <a href="blog">Blog </a>
+            <a href="#blog">Blog </a>
           </li>
           <li
             class="hover:font-bold duration-300 transition-all hover:text-heading"
           >
-            <a href="contact">Contact Us</a>
+            <a href="#contact">Contact Us</a>
           </li>
           </ul>
         </div>
@@ -223,7 +232,7 @@
               </section> 
 
         <!-- count section  -->
-         <section class="container mx-auto  px-5 lg:px-20  pb-10">
+         <section  class="container mx-auto  px-5 lg:px-20  pb-10">
 
         <div class="counts justify-between grid p-8  gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-white rounded-xl">
           <div class="count text-center">
@@ -253,18 +262,18 @@
 
          <!-- workers section  -->
 
-         <section class="container mx-auto  px-5 lg:px-20  py-10">  
+         <section id="#servies" class="container mx-auto  px-5 lg:px-20  py-10">  
             
 
             <div class="mini flex justify-center">
               <div class="bg-white rounded-full inline-block font-bold p-1 px-3">
                 <i
                 class="fa-solid fa-arrow-right-long "
-              ></i> About Us
+              ></i> How we works
                </div>
             </div>
 
-            <h2 class="text-center font-extrabold text-4xl my-5 ">Our Latest Portfolio</h2>
+            <h2 class="text-center font-extrabold text-4xl my-5 ">Our Works Process</h2>
             <p class="text-center max-w-[650px] m-auto mb-7">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
 
             <div class="works grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-3            ">
@@ -296,7 +305,7 @@
          </section>
       </div>
       
-      <!-- <section class="container mx-auto  px-5 lg:px-20  py-10">  
+      <section class="container mx-auto  px-5 lg:px-20  py-20">  
             
 
         <div class="mini flex justify-center">
@@ -310,19 +319,79 @@
         <h2 class="text-center font-extrabold text-4xl my-5 ">Our Latest Portfolio</h2>
         <p class="text-center max-w-[650px] m-auto mb-7">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
 
-        <div class="works grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-3            ">
+        <div class="works grid grid-cols-2 gap-5 mt-3 lg:grid-cols-12 lg:grid-rows-2">
+
+          <!-- iem1  -->
+
+          <div class=" md:h-[200px] col-span-2 p-3 flex  justify-between flex-col md:flex-row gap-4 rounded-xl border-[1px] border-[#ddd] items-center
+          lg:col-span-8
+          ">
+            <div class=" w-full h-full  md:w-[250px] md:h-full">
+              <img class="w-full h-full" src="assets/img1.png" alt="">
+            </div>
+            <div class="flex-1">
+                <h3 class="sub-heading mb-2">Commecrial</h3>
+                <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+                <a href="#" class="link inline-block mt-3">Read More           <i class="fa-solid fa-arrow-right-long  arow-btn"
+                  ></i></a>
+            </div>
+          </div>
+
+          <!-- item 2 -->
+           
+          <div class=" md:h-[200px] col-span-2 md:col-span-1 p-3 flex  justify-between flex-col gap-4 rounded-xl border-[1px] border-[#ddd] items-center lg:col-span-4 ">
+            <div class=" w-full h-full">
+              <img class="w-full h-full" src="assets/img2.png" alt="">
+            </div>
+          </div>
+
+          <!-- item 3 -->
+           
+          <div class="md:h-[200px] col-span-2 md:col-span-1 p-3 flex  justify-between flex-col gap-4 rounded-xl border-[1px] border-[#ddd] items-center lg:col-span-3">
+            <div class=" w-full h-full">
+              <img class="w-full h-full" src="assets/img3.png" alt="">
+            </div>
+          </div>
+
+                    <!-- iem4  -->
+
+                    <div class="md:h-[200px] col-span-2 p-3 flex  justify-between flex-col md:flex-row gap-4 rounded-xl border-[1px] border-[#ddd] items-center lg:col-span-6 ">
+                      <div class=" w-full h-full  md:w-[250px] md:h-full">
+                        <img class="w-full h-full" src="assets/img4.png" alt="">
+                      </div>
+                      <div class="flex-1">
+                          <h3 class="sub-heading mb-2">Commecrial</h3>
+                          <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+                          <a href="#" class="link inline-block mt-3">Read More           <i class="fa-solid fa-arrow-right-long  arow-btn"
+                            ></i></a>
+                      </div>
+                    </div>
+
+                              <!-- item 5 -->
+           
+          <div class=" md:h-[200px]  col-span-2 md:col-span-1 p-3 flex  justify-between flex-col gap-4 rounded-xl border-[1px] border-[#ddd] items-center lg:col-span-3 ">
+            <div class=" w-full h-full">
+              <img class="w-full h-full" src="assets/img5.png" alt="">
+            </div>
+          </div>
+                              <!-- item 6 -->
+           
+          <div class=" md:h-[200px] lg:hidden col-span-2 md:col-span-1 p-3 flex  justify-between flex-col gap-4 rounded-xl border-[1px] border-[#ddd] items-center ">
+            <div class=" w-full h-full">
+              <img class="w-full h-full" src="assets/img2.png" alt="">
+            </div>
+          </div>
 
 
-
-     </section> -->
+     </section>
 
 
      <!-- article and news section  -->
 
-     <section class="bg-[#F4F4F4]">  
+     <section id="blog" class="bg-[#F4F4F4]">  
           <div class="container mx-auto  px-5 lg:px-20  py-10">
             <div class="mini flex justify-center">
-              <div class="bg-litePrimary rounded-full inline-block font-bold p-1 px-3">
+              <div class="bg-litePrimary rounded-full inline-block font-bold p-1 px-3 ">
                 <i
                 class="fa-solid fa-arrow-right-long "
               ></i> Rinterio News
@@ -332,12 +401,30 @@
             <h2 class="text-center font-extrabold text-4xl my-5 ">Read Our Articles and News</h2>
             <p class="text-center max-w-[650px] m-auto mb-7">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
       
-            <div class="works grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-3">
+            <div class="works grid grid-cols-1 lg:grid-cols-3 gap-5 mt-3">
       
               
-            <div class="card bg-white rounded-xl p-3 flex flex-col gap-2">
-              <div class=""><img class="w-full" src="assets/article1.png" alt=""></div>
-              <div class="top flex gap-2">
+            <div class="card bg-white rounded-xl p-3 flex flex-col md:flex-row gap-3 lg:flex-col">
+              <div class=""><img class="w-full h-full" src="assets/article1.png" alt=""></div>
+              
+              <div>             <div class="top flex gap-2">
+                <img src="assets/calendar-03.png" class="" alt="">
+                <p class="font-thin">July 14, 2024</p>
+
+                <img src="assets/user-circle.png" alt="">
+                <p class="font-thin">By Admin</p>
+              </div>
+              <h3 class="sub-heading">How to choose the furniture right  of your home.</h3>
+              <p>The barn house captivates with its blend of rustic charm and modern. </p>
+              <a href="#" class="link">Read More           <i class="fa-solid fa-arrow-right-long  arow-btn"
+              ></i></a>
+            </div></div>
+      
+              
+            <div class="card bg-white rounded-xl p-3 flex flex-col md:flex-row gap-3 lg:flex-col">
+              <div class=""><img class="w-full h-full" src="assets/article2.png" alt=""></div>
+              
+              <div>             <div class="top flex gap-2">
                 <img src="assets/calendar-03.png" alt="">
                 <p class="font-thin">July 14, 2024</p>
 
@@ -348,12 +435,14 @@
               <p>The barn house captivates with its blend of rustic charm and modern. </p>
               <a href="#" class="link">Read More           <i class="fa-solid fa-arrow-right-long  arow-btn"
               ></i></a>
-            </div>
+            </div></div>
       
 
-            <div class="card bg-white rounded-xl p-3 flex flex-col gap-2">
-              <div class=""><img class="w-full" src="assets/article2.png" alt=""></div>
-              <div class="top flex gap-2">
+              
+            <div class="card bg-white rounded-xl p-3 flex flex-col md:flex-row gap-3 lg:flex-col">
+              <div class=""><img class="w-full h-full" src="assets/article3.png" alt=""></div>
+              
+              <div>             <div class="top flex gap-2">
                 <img src="assets/calendar-03.png" alt="">
                 <p class="font-thin">July 14, 2024</p>
 
@@ -364,40 +453,7 @@
               <p>The barn house captivates with its blend of rustic charm and modern. </p>
               <a href="#" class="link">Read More           <i class="fa-solid fa-arrow-right-long  arow-btn"
               ></i></a>
-            </div>
-      
-
-            <div class="card bg-white rounded-xl p-3 flex flex-col gap-2">
-              <div class=""><img class="w-full" src="assets/article3.png" alt=""></div>
-              <div class="top flex gap-2">
-                <img src="assets/calendar-03.png" alt="">
-                <p class="font-thin">July 14, 2024</p>
-
-                <img src="assets/user-circle.png" alt="">
-                <p class="font-thin">By Admin</p>
-              </div>
-              <h3 class="sub-heading">How to choose the furniture right  of your home.</h3>
-              <p>The barn house captivates with its blend of rustic charm and modern. </p>
-              <a href="#" class="link">Read More           <i class="fa-solid fa-arrow-right-long  arow-btn"
-              ></i></a>
-            </div>
-      
-
-            <div class="card bg-white rounded-xl p-3 flex flex-col gap-2">
-              <div class=""><img class="w-full" src="assets/article1.png" alt=""></div>
-              <div class="top flex gap-2">
-                <img src="assets/calendar-04.png" alt="">
-                <p class="font-thin">July 14, 2024</p>
-
-                <img src="assets/user-circle.png" alt="">
-                <p class="font-thin">By Admin</p>
-              </div>
-              <h3 class="sub-heading">How to choose the furniture right  of your home.</h3>
-              <p>The barn house captivates with its blend of rustic charm and modern. </p>
-              <a href="#" class="link">Read More           <i class="fa-solid fa-arrow-right-long  arow-btn"
-              ></i></a>
-            </div>
-
+            </div></div>
       
 
       
@@ -405,12 +461,39 @@
           </div>
    </section>
   
+   <!-- contact section  -->
+    <section class="py-12 mt-3 connect-bg">
+      <div class="container mx-auto  px-5 lg:px-20  py-10">
+        
+        <div class="mini flex justify-center">
+          <div class="bg-litePrimary rounded-full inline-block font-bold p-1 px-3">
+            <i
+            class="fa-solid fa-arrow-right-long "
+          ></i> Let’s Connect
+           </div>
+        </div>
+
+        <h2 class="text-center font-extrabold text-4xl my-5 ">Let’s Discuss Next Project</h2>
+        <p class="text-center max-w-[650px] m-auto mb-7">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+        <form action="" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input class="p-3 rounded-full outline-none" type="text" name="name" id="name" placeholder="First Name">
+          <input class="p-3 rounded-full outline-none" type="text" name="lastname" id="lastName" placeholder="Last Name">
+          <input class="p-3 rounded-full outline-none" type="number" name="number" id="number" placeholder="Phone Number">
+          <input class="p-3 rounded-full outline-none" type="email" name="email" id="email" placeholder="Email Number">
+          <textarea class="md:col-span-2 p-3 rounded-3xl resize-none  outline-none" rows="6" name="message" id="messate" placeholder="Write your Message here"></textarea>
+
+          <button class="md:col-span-2 w-full bg-primary font-bold  py-2 rounded-full mt-2 ">Send Mail           <i class="fa-solid fa-arrow-right-long bg-dark text-primary -rotate-45   p-2 rounded-full "
+            ></i> </button>
+        </form>
+      </div>
+    </section>
 
     </main>
 
     <!-- footer sectio  -->
 
-    <footer class="bg-dark py-24 flex justify-center flex-col gap-5 items-center">
+    <footer class="bg-dark py-24 flex mt-3 justify-center flex-col gap-5 items-center">
       <div class="logo flex gap-2">
         <i class="fa-solid fa-arrow-right-long  arow-btn "
         ></i></a>
